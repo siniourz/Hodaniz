@@ -14,24 +14,24 @@
             <nav>
                 <div class="nav-container">
                     <ul>
-                        <li class="logo"><a href="index.html" id="poch"><img src="Assets/main-logo-vf.png" alt="" class="logo"></a></li><!--small logo on the top left of the page-->
-                        <li><a href="#">Photoes</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li class="contact"><a href="contact.html">Contact</a></li><!--contact page link, you can add as many links as you want with this structure, just remove the class of the added ones only-->
+                        <li class="logo"><a href="index.html" id="poch"><h1 class="logo">Hodanix</h1></a></li><!--small logo on the top left of the page-->
+                        <li><a href="">Photoes</a></li>
+                        <li><a href="#projects" onclick="scrollToProjects(event)">Projects</a></li>
+                        <li><a href="#service" onclick="scrollToServices(event)">Services</a></li>                        
+                        <li class="contact"><a href="#contact" onclick="ScrollToContact(event)">Contact</a></li><!--contact page link, you can add as many links as you want with this structure, just remove the class of the added ones only-->
                     </ul>
                 </div>
             </nav>
             <div class="first-part">
                 <h1>Welcome to Hodanix</h1><!--main title of the page-->
                 <p>Your one-stop solution for all your needs.</p><!--subtitle of the page-->
-                <div class="button-container">
+                
                     
                 <img src="Assets/downward-arr0w.png" alt="" class="downward-arrow"><!--downward arrow image that links to the second part of the page-->
             </div>
         </div>
     </header>
-    <div class="second-part">
+    <div class="second-part" id="top">
         <div class="second-part-ImgContainer">
             <img src="Assets/construction-tbrha3aoagau52xz.jpg" alt="" class="second-part-img">
         </div>
@@ -41,18 +41,36 @@
             
         </div>
     </div>
+
     <div class="third-part">
         <div class="third-part-text">
-            <h2>Our Services</h2><!--title of the third part of the page-->
+            <h2 id="service">Our Services</h2><!--title of the third part of the page-->
             <p>We offer a wide range of services to meet your needs.</p><!--subtitle of the third part of the page-->
             <ul>
-                <li><span>Renovation</span>: Hodanix specialize in delivering top-quality renovations that transform spaces with precision and style. Whether it's a simple refresh or a full-scale remodel, we handle every detail with care and professionalism. Our expert team ensures flawless execution, modern design, and lasting results—making your vision come to life perfectly.</li><!--list of services, you can add as many services as you want with this structure, just remove the class of the added ones only-->
-                <li><span>service 2</span>: Description of service 2.</li>
-                <li><span>service 3 </span>: Description of service 3</li><!--add as much as service as you need-->
+                <li><span>Renovation</span> Hodanix specialize in delivering top-quality renovations that transform spaces with precision and style. Whether it's a simple refresh or a full-scale remodel, we handle every detail with care and professionalism. Our expert team ensures flawless execution, modern design, and lasting results—making your vision come to life perfectly.</li><!--list of services, you can add as many services as you want with this structure, just remove the class of the added ones only-->
+                <li><span>Interior Fit-Out</span>Interior fit-out services involve transforming empty or shell spaces into fully functional interiors tailored to client needs. This includes installing flooring, ceilings, partitions, lighting, and custom finishes. Whether for offices, retail stores, or restaurants, a construction company ensures the space is not only aesthetically pleasing but also practical, efficient, and compliant with safety regulations.</li>
+                <li><span>Exterior Improvements</span>Exterior improvements focus on enhancing the outer appearance and durability of a building. Services may include facade upgrades, painting, roofing, siding, and installing modern cladding systems. These enhancements not only boost curb appeal but also improve weather resistance, energy efficiency, and long-term property value.</li><!--add as much as service as you need-->
             </ul>
         </div>
     </div>
-    <div class="fourth-part">
+    <div class="thirdplus">
+        <h2>Our Significant <span>Numbers</span></h2><!--title for the section-->
+        <div class="satisfaction-boxes">
+            <div class="box">
+                <h3>95%</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+            <div class="box">
+                <h3>90%</h3>
+                <p>Project Success Rate</p>
+            </div>
+            <div class="box">
+                <h3>98%</h3>
+                <p>Service Quality</p>
+            </div>
+        </div>
+    </div>
+    <div class="fourth-part" id="projects">
         <div class="container-3">
             <div class="scroller-3">
                 <img src="Assets/Photoes-part/3.webp" alt="" class="item">
@@ -129,7 +147,8 @@
             <h1 class="earings-h1" data-lang="earrings">Completed Projects</h1>
         </div>
     </div>
-    <div class="fifthpart">
+
+    <div class="fifthpart" id="contact">
         <div class="fifth-part-text">
             <h2>Contact Us</h2><!--title of the fifth part of the page-->
             <p>If you have any questions or inquiries, feel free to reach out to us.</p><!--subtitle of the fifth part of the page-->
@@ -140,6 +159,9 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
+    </div>
+    <div class="moveToTopButton" id="moveToTopButton" onclick="scrollToTop(event)"><!--button to move to the top of the page-->
+        <img src="Assets/up-arrow.png" alt="">
     </div>
     <footer>
         <div class="footer-container">
@@ -160,7 +182,6 @@
                 <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
                 <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
             </ul>
-
         </div>
     </footer>
     

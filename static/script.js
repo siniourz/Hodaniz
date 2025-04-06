@@ -16,4 +16,42 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
+function scrollToServices(event) {
+    event.preventDefault(); // Prevents the default jump
+    const section = document.getElementById('service');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+function scrollToProjects(event) {
+    event.preventDefault(); // Prevents the default jump
+    const section = document.getElementById('projects');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+function ScrollToContact(event) {
+    event.preventDefault(); // Prevents the default jump
+    const section = document.getElementById('contact');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+function scrollToTop(event) {
+    event.preventDefault(); // Prevents the default jump
+    const section = document.getElementById('top');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+window.addEventListener('scroll', function() {
+    const target = document.getElementById('moveToTopButton');
+    if (window.scrollY > 1400) { // change 300 to your desired scroll amount
+        target.classList.add('visible');
+        
+    } else {
+        target.classList.remove('visible');
+    }
+});
+
 
