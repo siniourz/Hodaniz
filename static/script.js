@@ -46,9 +46,9 @@ function scrollToTop(event) {
 };
 window.addEventListener('scroll', function() {
     const target = document.getElementById('moveToTopButton');
-    if (window.scrollY > 1400) { // change 300 to your desired scroll amount
+    if (window.scrollY > 1400) { // change the number to your desired scroll amount
         target.classList.add('visible');
-        
+
     } else {
         target.classList.remove('visible');
     }

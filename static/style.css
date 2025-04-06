@@ -78,6 +78,7 @@ nav{
     cursor: pointer;
     background-color: transparent;
     border-radius: 50px;
+    color: #1a1a1ad0;
 }
 .contact{
     background-color: green;
@@ -239,7 +240,7 @@ nav{
 }
 .third-part {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -249,7 +250,7 @@ nav{
     overflow: hidden; /* Ensures content doesn't overflow */
 }
 .third-part-text {
-    width: 60%; /* Adjusted width to prevent covering the entire third part */
+    width: 100%; /* Adjusted width to prevent covering the entire third part */
     height: auto; /* Adjusted height to fit content */
     display: flex;
     flex-direction: column;
@@ -259,6 +260,8 @@ nav{
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    height: 90%;
+    padding: 20px;
     border-radius: 10px; /* Optional: Adds rounded corners for better aesthetics */
 }
 .third-part-text h2 {
@@ -291,7 +294,7 @@ nav{
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    gap: 40px; /* Balanced gap for a cleaner layout */
+    gap: 20px; /* Balanced gap for a cleaner layout */
     flex-wrap: wrap; /* Allows items to wrap to the next line */
     animation: fadeInSlide 1s ease-out forwards;
     opacity: 0;
@@ -642,6 +645,14 @@ form button:hover {
     0% {
         transform: translateX(100%);
         opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(0);
+        opacity: 0.8;
     }
     100% {
         transform: translateX(0);
