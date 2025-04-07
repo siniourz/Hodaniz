@@ -113,14 +113,14 @@ nav{
 }
 .first-part h1, .first-part p {
     font-size: 50px;
-    color: #333;
+    color: rgb(230, 230, 230);
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1s ease-out forwards;
 }
 .first-part p {
     font-size: 20px;
-    color: #666;
+    color: #a7a7a7;
     animation-delay: 0.5s;
 }
 .first-part button{
