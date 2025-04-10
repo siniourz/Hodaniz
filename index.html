@@ -15,9 +15,9 @@
                 <div class="nav-container">
                     <ul>
                         <li class="logo"><a href="index.html" id="poch"><h1 class="logo">Hodanix</h1></a></li><!--small logo on the top left of the page-->
-                        <li><a href="">Photoes</a></li>
                         <li><a href="#projects" onclick="scrollToProjects(event)">Projects</a></li>
                         <li><a href="#service" onclick="scrollToServices(event)">Services</a></li>                        
+                        <li><a href="#top" onclick="ScrollToFirstPart(event)">About Us</a></li>
                         <li class="contact"><a href="#contact" onclick="ScrollToContact(event)">Contact</a></li><!--contact page link, you can add as many links as you want with this structure, just remove the class of the added ones only-->
                     </ul>
                 </div>
@@ -27,7 +27,7 @@
                 <p>Your one-stop solution for all your needs.</p><!--subtitle of the page-->
                 
                     
-                <img src="Assets/downward-arr0w.png" alt="" class="downward-arrow"><!--downward arrow image that links to the second part of the page-->
+                <img src="Assets/down-arrow.png" alt="" class="downward-arrow" onclick="ScrollToFirstPart(event)"><!--downward arrow image that links to the second part of the page-->
             </div>
         </div>
     </header>
@@ -43,31 +43,62 @@
     </div>
 
     <div class="third-part">
+        <button class="rightbutton"><img src="Assets/rightarrow.png" alt=""></button>
+        <button class="leftbutton"><img src="Assets/back.png" alt=""></button>
         <div class="third-part-text">
             <h2 id="service">Our Services</h2><!--title of the third part of the page-->
-            <p>We offer a wide range of services to meet your needs.</p><!--subtitle of the third part of the page-->
-            <ul>
-                <li><span>Renovation</span> Hodanix specialize in delivering top-quality renovations that transform spaces with precision and style. Whether it's a simple refresh or a full-scale remodel, we handle every detail with care and professionalism. Our expert team ensures flawless execution, modern design, and lasting results—making your vision come to life perfectly.</li><!--list of services, you can add as many services as you want with this structure, just remove the class of the added ones only-->
-                <li><span>Interior Fit-Out</span>Interior fit-out services involve transforming empty or shell spaces into fully functional interiors tailored to client needs. This includes installing flooring, ceilings, partitions, lighting, and custom finishes. Whether for offices, retail stores, or restaurants, a construction company ensures the space is not only aesthetically pleasing but also practical, efficient, and compliant with safety regulations.</li>
-                <li><span>Exterior Improvements</span>Exterior improvements focus on enhancing the outer appearance and durability of a building. Services may include facade upgrades, painting, roofing, siding, and installing modern cladding systems. These enhancements not only boost curb appeal but also improve weather resistance, energy efficiency, and long-term property value.</li><!--add as much as service as you need-->
-                <li><span>Demolition</span>Demolition services involve the safe and efficient removal of existing structures or sections of buildings. Whether for full tear-downs or partial removals before renovations, construction companies use specialized equipment and safety protocols to clear sites in preparation for new work.</li><!--add as much as service as you need-->
-                <li><span>Site Preparation & Earthworks</span>Before any construction begins, site preparation is crucial. This includes clearing vegetation, leveling the ground, excavation, and setting up temporary infrastructure. These services ensure the construction site is ready and suitable for building, with a stable and secure foundation</li><!--add as much as service as you need-->
-
-            </ul>
+            <p class="first-p">We offer a wide range of services to meet your needs.</p><!--subtitle of the third part of the page-->
+            <div class="services-container">
+                <ul class="services-list">
+                    <li>
+                        <img src="Assets/renovation.jpeg" alt="Renovation">
+                        <span>Renovation</span>
+                        <p>Hodanix specialize in delivering top-quality renovations that transform spaces with precision and style. Whether it's a simple refresh or a full-scale remodel, we handle every detail with care and professionalism. Our expert team ensures flawless execution, modern design, and lasting results—making your vision come to life perfectly.</p>
+                    </li>
+                    <li>
+                        <img src="Assets/Interior Fit-Out.jpg" alt="Interior Fit-Out">
+                        <span>Interior Fit-Out</span>
+                        <p>Interior fit-out services involve transforming empty or shell spaces into fully functional interiors tailored to client needs. This includes installing flooring, ceilings, partitions, lighting, and custom finishes. Whether for offices, retail stores, or restaurants, a construction company ensures the space is not only aesthetically pleasing but also practical, efficient, and compliant with safety regulations.</p>
+                    </li>
+                    <li>
+                        <img src="Assets/Exterior Improvements.jpg" alt="Exterior Improvements">
+                        <span>Exterior Improvements</span>
+                        <p>Exterior improvements focus on enhancing the outer appearance and durability of a building. Services may include facade upgrades, painting, roofing, siding, and installing modern cladding systems. These enhancements not only boost curb appeal but also improve weather resistance, energy efficiency, and long-term property value.</p>
+                    </li>
+                    <li>
+                        <img src="Assets/Demolition.jpg" alt="Demolition">
+                        <span>Demolition</span>
+                        <p>Demolition services involve the safe and efficient removal of existing structures or sections of buildings. Whether for full tear-downs or partial removals before renovations, construction companies use specialized equipment and safety protocols to clear sites in preparation for new work.</p>
+                    </li>
+                    <li>
+                        <img src="Assets/Site Preparation & Earthworks.jpeg" alt="Site Preparation & Earthworks">
+                        <span>Site Preparation & Earthworks</span>
+                        <p>Before any construction begins, site preparation is crucial. This includes clearing vegetation, leveling the ground, excavation, and setting up temporary infrastructure. These services ensure the construction site is ready and suitable for building, with a stable and secure foundation.</p>
+                    </li>
+                    <li>
+                        <img src="Assets/construction-tbrha3aoagau52xz.jpg" alt="Construction Management">
+                        <span>Construction Management</span>
+                        <p>Construction management services oversee the entire construction process, from planning to completion. This includes coordinating subcontractors, managing budgets, ensuring timelines are met, and maintaining quality standards. Effective construction management ensures projects are delivered on time, within budget, and to the highest quality.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="thirdplus">
         <h2>Our Significant <span>Numbers</span></h2><!--title for the section-->
         <div class="satisfaction-boxes">
             <div class="box">
-                <h3>95%</h3>
-                <p>Customer Satisfaction</p>
+                <img src="Assets/24-hours-support.png" alt="Customer Satisfaction">
+                <h3>24/7</h3>
+                <p>Customer Support</p>
             </div>
             <div class="box">
+                <img src="Assets/satisfaction.png" alt="Project Success Rate">
                 <h3>90%</h3>
                 <p>Project Success Rate</p>
             </div>
             <div class="box">
+                <img src="Assets/customer-service.png" alt="Service Quality">
                 <h3>98%</h3>
                 <p>Service Quality</p>
             </div>
@@ -156,11 +187,19 @@
             <h2>Contact Us</h2><!--title of the fifth part of the page-->
             <p>If you have any questions or inquiries, feel free to reach out to us.</p><!--subtitle of the fifth part of the page-->
             <form action="submit_form.php" method="POST"><!--contact form, you can add as many inputs as you want with this structure, just remove the class of the added ones only-->
-                <input type="text" name="name" placeholder="Your Name" class="name" required>
-                <input type="email" name="email" placeholder="Your Email" class="email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" class="message" required></textarea>
+                <input type="text" name="name" placeholder="Name" class="name" required>
+                <input type="email" name="email" placeholder="Email" class="email" required>
+                <textarea name="message" rows="5" placeholder="Message" class="message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div class="contact-buttons">
+                <button onclick="window.open('https://wa.me/yourphonenumber', '_blank')">
+                    <img src="Assets/whatsapp.png" alt="WhatsApp Icon"><span>Contact via WhatsApp</span> 
+                </button>
+                <button onclick="window.location.href='sms:yourphonenumber'">
+                    <img src="Assets/imessage.png" alt="iMessage Icon"><span>Contact via iMessage</span>
+                </button>
+            </div>
         </div>
     </div>
     <div class="moveToTopButton" id="moveToTopButton" onclick="scrollToTop(event)"><!--button to move to the top of the page-->
@@ -187,6 +226,6 @@
             </ul>
         </div>
     </footer>
-    
+   
 </body>
 </html>
