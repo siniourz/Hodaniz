@@ -93,4 +93,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    // Add mouse wheel scrolling
+    list.addEventListener('wheel', (event) => {
+        if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) { // Horizontal scrolling
+            event.preventDefault(); // Prevent default only for horizontal scrolling
+            if (event.deltaX > 0) { // Scroll right
+                if (currentIndex < totalItems - itemsPerView) {
+                    currentIndex++;
+                    updateScroll();
+                }
+            } else { // Scroll left
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateScroll();
+                } else {
+                    list.style.transform = 'translateX(0px)'; // Reset to the start
+                }
+            }
+        }
+        // Allow vertical scrolling (deltaY) to function normally
+    });
 });

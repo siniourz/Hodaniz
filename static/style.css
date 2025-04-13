@@ -367,8 +367,7 @@ nav{
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    height: 90%;
-    padding: 20px;
+    height: 85%;
     border-radius: 10px; /* Optional: Adds rounded corners for better aesthetics */
 }
 
@@ -402,6 +401,7 @@ nav{
 .services-list li {
     min-width: 25%; /* Show 4 at a time (100 / 4) */
     box-sizing: border-box;
+
 }
 .first-p {
     font-size: 20px;
@@ -420,7 +420,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     gap: 20px; /* Balanced gap for a cleaner layout */
     animation-delay: 1.3s; /* Reduced delay for quicker appearance */
 }
@@ -443,13 +443,13 @@ nav{
     font-weight: 300; /* Normal weight for a clean look */
 }
 .third-part-text ul li p{
-    font-size: 18px;
+    font-size: 17px;
     color: #666; /* Neutral text color for better readability */
     opacity: 0;
     transform: translateY(30%);
     animation: fadeInSlide 1s ease-out forwards;
     animation-delay: 0.3s; /* Reduced delay for quicker appearance */
-    line-height: 1;
+    line-height: 1.1;
     text-align: center;
     margin-top: 10px; /* Added margin for spacing */
 }
@@ -481,7 +481,7 @@ nav{
 }
 .thirdplus {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
