@@ -12,16 +12,29 @@
         <div class="container">
             <img src="Assets/img1-bg.jpg" alt="" class="backgroundimg">
             <nav>
-                <div class="nav-container">
-                    <ul>
-                        <li class="logo"><a href="index.html" id="poch"><h1 class="logo">Hodanix</h1></a></li><!--small logo on the top left of the page-->
-                        <li><a href="#projects" onclick="scrollToProjects(event)">Projects</a></li>
-                        <li><a href="#service" onclick="scrollToServices(event)">Services</a></li>                        
-                        <li><a href="#top" onclick="ScrollToFirstPart(event)">About Us</a></li>
-                        <li class="contact"><a href="#contact" onclick="ScrollToContact(event)">Contact</a></li><!--contact page link, you can add as many links as you want with this structure, just remove the class of the added ones only-->
-                    </ul>
+            <div class="nav-container">
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
                 </div>
+                <ul class="nav-links">
+                <li class="logo"><a href="index.html" id="poch"><h1 class="logo">Hodanix</h1></a></li><!--small logo on the top left of the page-->
+                <li><a href="#projects" onclick="scrollToProjects(event)" id="pr">Projects</a></li>
+                <li><a href="#service" onclick="scrollToServices(event)">Services</a></li>                        
+                <li><a href="#top" onclick="ScrollToFirstPart(event)">About Us</a></li>
+                <li class="contact"><a href="#contact" onclick="ScrollToContact(event)">Contact</a></li><!--contact page link-->
+                </ul>
+            </div>
             </nav>
+        </div>
+        <script>
+            function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            }
+        </script>
+
             <div class="first-part">
                 <h1>Welcome to Hodanix</h1><!--main title of the page-->
                 <p>Your one-stop solution for all your needs.</p><!--subtitle of the page-->
