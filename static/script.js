@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         // Allow vertical scrolling (deltaY) to function normally
+        
     });
     
 });
